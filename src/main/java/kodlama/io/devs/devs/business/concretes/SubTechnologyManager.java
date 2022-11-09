@@ -1,5 +1,10 @@
 package kodlama.io.devs.devs.business.concretes;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import kodlama.io.devs.devs.business.abstracts.SubTechnologyService;
 import kodlama.io.devs.devs.business.requests.CreateSubTechnologyRequest;
 import kodlama.io.devs.devs.business.requests.UpdateSubTechnologyRequest;
@@ -8,11 +13,6 @@ import kodlama.io.devs.devs.dataAccess.abstracts.ProgrammingLanguageRepository;
 import kodlama.io.devs.devs.dataAccess.abstracts.SubTechnologyRepository;
 import kodlama.io.devs.devs.entities.concretes.ProgrammingLanguage;
 import kodlama.io.devs.devs.entities.concretes.SubTechnology;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class SubTechnologyManager implements SubTechnologyService {
