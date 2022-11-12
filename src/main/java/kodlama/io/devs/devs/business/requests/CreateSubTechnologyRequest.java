@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateSubTechnologyRequest {
-    private String name;
-    private int programmingLanguageId;
+
+	private String name;
+	private int programmingLanguageId;
+
 }

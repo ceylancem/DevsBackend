@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GetProgrammingLanguageResponse {
-    private int id;
-    private String name;
+
+	private int id;
+	private String name;
+
 }

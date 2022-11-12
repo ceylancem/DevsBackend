@@ -12,29 +12,29 @@ import java.util.List;
 @RequestMapping("/api/subtechnology")
 public class SubTechnologyController {
 
-    private SubTechnologyService subTechnologyService;
+	private SubTechnologyService subTechnologyService;
 
-    public SubTechnologyController(SubTechnologyService subTechnologyService) {
-        this.subTechnologyService = subTechnologyService;
-    }
+	public SubTechnologyController(SubTechnologyService subTechnologyService) {
+		this.subTechnologyService = subTechnologyService;
+	}
 
-    @PostMapping("/add")
-    public void add(@RequestBody CreateSubTechnologyRequest createSubTechnologyRequest) throws Exception {
-        subTechnologyService.add(createSubTechnologyRequest);
-    }
+	@PostMapping("/add")
+	public void add(@RequestBody CreateSubTechnologyRequest createSubTechnologyRequest) throws Exception {
+		subTechnologyService.add(createSubTechnologyRequest);
+	}
 
-    @GetMapping("/getall")
-    public List<GetSubTechnologyResponse> getAll(){
-        return subTechnologyService.getAll();
-    }
+	@GetMapping("/getall")
+	public List<GetSubTechnologyResponse> getAll() {
+		return subTechnologyService.getAll();
+	}
 
-    @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable int id){
-        subTechnologyService.delete(id);
-    }
+	@DeleteMapping("/delete/{id}")
+	public void delete(@PathVariable int id) {
+		subTechnologyService.delete(id);
+	}
 
-    @PutMapping("/update")
-    public void update(@RequestBody UpdateSubTechnologyRequest updateSubTechnologyRequest){
-        subTechnologyService.update(updateSubTechnologyRequest);
-    }
+	@PutMapping("/update")
+	public void update(@RequestBody UpdateSubTechnologyRequest updateSubTechnologyRequest) throws Exception {
+		subTechnologyService.update(updateSubTechnologyRequest);
+	}
 }
