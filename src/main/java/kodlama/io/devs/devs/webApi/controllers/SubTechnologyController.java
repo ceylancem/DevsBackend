@@ -37,4 +37,5 @@ public class SubTechnologyController {
 	public void update(@RequestBody UpdateSubTechnologyRequest updateSubTechnologyRequest) throws Exception {
 		subTechnologyService.update(updateSubTechnologyRequest);
 	}
+
 }

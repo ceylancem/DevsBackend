@@ -8,5 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateProgrammingLanguageRequest {
-    private String name;
+
+	private String name;
+
 }

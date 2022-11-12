@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UpdateProgrammingLanguageRequest {
-    private int id;
-    private String name;
+
+	private int id;
+	private String name;
+
 }

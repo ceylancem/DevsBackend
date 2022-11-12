@@ -14,14 +14,15 @@ import java.util.List;
 @NoArgsConstructor
 public class ProgrammingLanguage {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private int id;
 
-    @Column(name = "name")
-    private String name;
+	@Column(name = "name")
+	private String name;
 
-    @OneToMany(mappedBy = "programmingLanguage")
-    private List<SubTechnology> subTechnologies;
+	@OneToMany(mappedBy = "programmingLanguage")
+	private List<SubTechnology> subTechnologies;
+
 }

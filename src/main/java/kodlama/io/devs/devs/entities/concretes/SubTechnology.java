@@ -13,15 +13,16 @@ import javax.persistence.*;
 @Table(name = "sub_technologies")
 public class SubTechnology {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private int id;
 
-    @Column(name = "name")
-    private String name;
+	@Column(name = "name")
+	private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "programming_language_id")
-    private ProgrammingLanguage programmingLanguage;
+	@ManyToOne
+	@JoinColumn(name = "programming_language_id")
+	private ProgrammingLanguage programmingLanguage;
+
 }
